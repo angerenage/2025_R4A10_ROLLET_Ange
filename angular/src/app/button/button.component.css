@@ -1,0 +1,55 @@
+button {
+	background-color: #fff;
+	color: var(--primary-color);
+	border: 1.5px solid var(--primary-color);
+	border-radius: 99999px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+
+	padding: 10px 20px;
+	min-width: 200px;
+	
+	cursor: pointer;
+
+	transition: background-color 0.3s, color 0.3s;
+}
+
+button p {
+	line-height: 33px;
+	margin: 0;
+}
+
+button img {
+	height: 16px;
+	transition: filter 0.2s;
+}
+
+button.inverted {
+	background-color: var(--primary-color);
+	color: var(--text-white);
+}
+
+button.inverted img {
+	filter: brightness(0) invert(1);
+}
+
+button:hover {
+	background-color: var(--primary-color);
+	color: var(--text-white);
+}
+
+button:hover img {
+	filter: brightness(0) invert(1);
+}
+
+button.inverted:hover {
+	background-color: #fff;
+	color: var(--primary-color);
+}
+
+button.inverted:hover img {
+	filter: none;
+}

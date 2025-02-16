@@ -1,0 +1,30 @@
+:root {
+    --text-color: #1F1534;
+    --text-light: #8f8a99;
+	--text-white: #ffffff;
+
+	--primary-color: #458FF6;
+
+	--shadow: 10px 40px 50px #e5e9f666;
+	--gradient-primary: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    font-family: "Mulish", serif;
+    font-size: 18px;
+}
+
+section {
+	padding: 95px 190px;
+}
+
+@media (max-width: 1200px) {
+	section {
+		padding: 95px 90px;
+	}
+}

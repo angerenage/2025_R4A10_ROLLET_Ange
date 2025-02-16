@@ -1,0 +1,13 @@
+<section [class.inverted]="inverted">
+	@if (!inverted) {
+		<img src="{{illustration}}" alt="{{title}}">
+	}
+	<div>
+		<app-section-title [title]="title" [centered]="false"></app-section-title>
+		<p>{{description}}</p>
+		<ng-content></ng-content>
+	</div>
+	@if (inverted) {
+		<img src="{{illustration}}" alt="{{title}}">
+	}
+</section>

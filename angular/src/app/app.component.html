@@ -1,0 +1,15 @@
+<app-header></app-header>
+<main>
+	<app-section-1></app-section-1>
+	<app-section-services></app-section-services>
+	<app-illustrated-section title="Leading healthcare providers" description="Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it's not just work. We take pride in the solutions we deliver" illustration="./assets/illustrations/illustration-1.png">
+		<app-button text="Learn more"></app-button>
+	</app-illustrated-section>
+	<app-illustrated-section [inverted]="true" title="Download our mobile apps" description="Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely" illustration="./assets/illustrations/illustration-2.png">
+		<app-button text="Download" icon="./assets/download.svg"></app-button>
+	</app-illustrated-section>
+	<app-section-customer></app-section-customer>
+	<app-section-articles></app-section-articles>
+</main>
+<app-footer></app-footer>
+<router-outlet />

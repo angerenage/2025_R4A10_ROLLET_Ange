@@ -1,0 +1,37 @@
+hgroup {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+hgroup.centered {
+	text-align: center;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 56px;
+	margin: 0;
+}
+
+hr {
+	border: 1px solid var(--text-color);
+	border-radius: 1px;
+	width: 54px;
+
+	margin: 26px 0;
+}
+
+.centered hr {
+	margin: 26px auto;
+}
+
+.light h1 {
+	color: var(--text-white);
+}
+
+.light hr {
+	border-color: var(--text-white);
+}

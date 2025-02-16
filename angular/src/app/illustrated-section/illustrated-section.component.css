@@ -1,0 +1,66 @@
+section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 138px;
+
+	padding-left: 135px;
+	padding-right: 192px;
+	
+}
+
+section.inverted {
+	gap: 71px;
+
+	padding-left: 280px;
+	padding-right: 164px;
+}
+
+section div {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+section div p {
+	font-size: 21px;
+	font-weight: 200;
+	color: var(--text-light);
+	line-height: 32px;
+	margin: 0;
+}
+
+img {
+	width: 51%;
+}
+
+.inverted img {
+	width: 57.5%;
+}
+
+@media (max-width: 1200px) {
+	section {
+		gap: 90px;
+
+		padding-left: 85px;
+    	padding-right: 100px;
+	}
+
+	section.inverted {
+		gap: 50px;
+
+		padding-left: 170px;
+		padding-right: 120px;
+	}
+}
+
+@media (max-width: 800px) {
+	section.inverted {
+		padding: 95px 90px;
+	}
+
+	img {
+		display: none;
+	}
+}

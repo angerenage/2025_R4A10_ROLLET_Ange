@@ -1,0 +1,13 @@
+<header>
+	<img src="./assets/logo.svg" alt="Trafalgar logo" />
+	<div class="menu">
+		<img src="./assets/burger.svg" class="burger-menu" (click)="toggleMenu()" alt="Open menu" />
+		<nav [class.open]="isMenuOpen">
+			<a href="#" class="selected">Home</a>
+			<a href="#">Find a doctor</a>
+			<a href="#">Apps</a>
+			<a href="#">Testimonials</a>
+			<a href="#">About us</a>
+		</nav>
+	</div>
+</header>

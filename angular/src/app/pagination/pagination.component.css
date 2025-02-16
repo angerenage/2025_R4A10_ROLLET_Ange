@@ -1,0 +1,35 @@
+:host {
+	display: flex;
+	gap: 90px;
+}
+
+img {
+	cursor: pointer;
+}
+
+img.disabled {
+	cursor: initial;
+	opacity: 0.4;
+}
+
+.slider {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+}
+
+svg circle {
+	fill: var(--primary-color);
+	opacity: 0.3;
+
+	transition: opacity 0.2s;
+}
+
+svg circle.selected {
+	opacity: 1;
+}
+
+svg circle:not(.selected):hover {
+	cursor: pointer;
+	opacity: 0.8;
+}

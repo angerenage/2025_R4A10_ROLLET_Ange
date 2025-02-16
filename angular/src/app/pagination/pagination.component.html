@@ -1,0 +1,9 @@
+<img src="./assets/arrow-left.svg" alt="Previous" (click)="previousPage()" [class.disabled]="currentPage === 0 ? true : null" />
+<div class="slider">
+@for (i of range; track i) {
+	<svg width="10" height="10">
+		<circle cx="5" cy="5" r="5" [class.selected]="currentPage === i ? true : null" (click)="changePage(i)"></circle>
+	</svg>
+}
+</div>
+<img src="./assets/arrow-right.svg" alt="Next" (click)="nextPage()" [class.disabled]="currentPage >= (pageNumber - 1) ? true : null" />

@@ -1,0 +1,7 @@
+<section>
+	<div class="customer">
+		<app-section-title title="What our customer are saying" [light]="true"></app-section-title>
+		<app-customer-review [picture]="customerReviews[currentPage].picture" [name]="customerReviews[currentPage].name" [subtitle]="customerReviews[currentPage].subtitle" [review]="customerReviews[currentPage].review"></app-customer-review>
+	</div>
+	<app-pagination [pageNumber]="customerReviews.length" (pageChange)="handlePageChange($event)"></app-pagination>
+</section>

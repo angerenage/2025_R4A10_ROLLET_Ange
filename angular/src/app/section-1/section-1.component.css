@@ -1,0 +1,67 @@
+section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	background-image: url('/assets/decoration.svg');
+	background-repeat: no-repeat;
+	background-position-x: -50px;
+
+	padding: 17px 190px;
+	padding-bottom: 95px;
+}
+
+section div {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+
+	width: 36.3%;
+}
+
+section div h1 {
+	font-size: 48px;
+	font-weight: 700;
+	margin: 0;
+}
+
+section div p {
+	font-size: 21px;
+	font-weight: 200;
+	color: var(--text-light);
+	line-height: 32px;
+	margin: 0;
+}
+
+section div button {
+	background-color: var(--primary-color);
+	color: var(--text-white);
+	border: none;
+	border-radius: 99999px;
+
+	width: fit-content;
+	padding: 15px 40px;
+
+	cursor: pointer;
+}
+
+section img {
+	width: 56.8%;
+}
+
+@media (max-width: 1200px) {
+	section {
+		padding: 17px 90px;
+		padding-bottom: 95px;
+	}
+}
+
+@media (max-width: 800px) {
+	section div {
+		width: 100%;
+	}
+
+	section img {
+		display: none;
+	}
+}
