@@ -1,0 +1,12 @@
+<main>
+    <div>
+        @for (travel of travels; track travel.destination) {
+            <div>
+                <h2>{{travel.departure}} -> {{ travel.destination }}</h2>
+                <p>{{ travel.description }}</p>
+                <p>{{ travel.startDate }} - {{ travel.endDate }}</p>
+                <p>{{ travel.price }}$</p>
+            </div>
+        }
+    </div>
+</main>
